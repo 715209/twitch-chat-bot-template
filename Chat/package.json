@@ -1,0 +1,34 @@
+{
+  "name": "useless-twitch-chat-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node ./src/app.js",
+    "build": "babel src —-out-dir build",
+    "prod": "node build/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/715209/bad-chat-bot.git"
+  },
+  "author": "Brian Spit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/715209/bad-chat-bot/issues"
+  },
+  "homepage": "https://github.com/715209/bad-chat-bot#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "babel-plugin-inline-dotenv": "^1.2.0",
+    "node-fetch": "^2.3.0",
+    "ws": "^6.1.2"
+  }
+}
