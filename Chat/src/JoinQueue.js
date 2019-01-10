@@ -8,7 +8,7 @@ class JoinQueue {
     this.ws = ws;
 
     this.joins = 50;
-    this.seconds = 1;
+    this.seconds = 15;
     this.position = 0;
     this.positionEnd = this.joins;
 
