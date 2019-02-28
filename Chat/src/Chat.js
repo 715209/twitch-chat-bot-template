@@ -94,6 +94,11 @@ class Chat extends EventEmitter {
                 break;
         }
     }
+
+    // How should i handle rate limit stuff
+    say(channel, message) {
+        this.ws.send(`PRIVMSG ${channel} :${message}`);
+    }
 }
 
 export default Chat;
